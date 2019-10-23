@@ -8,7 +8,7 @@ public class Lab8StudentInfo {
 		Scanner scan = new Scanner(System.in);
 		int userNum = 0;
 
-		String[] arrNames = { "Bryan", "Bob", "Steve", "Robbie", "Ben", "Dru", "Chloe", "Abbey", "Jazz", "Ashley" };
+		String[] arrNames = { "Bryan", "Bob", "Steve", "Robbie", "Ben", "Dru", "Ashley", "Abbey", "Jazz", "Chloe" };
 
 		String[] arrCitys = { "Detroit", "Saigon", "Hanoi", "Hong Kong", "Cuzco", "Varansai", "New Orleans", "New York",
 				"Cao Lao", "Burma" };
@@ -23,7 +23,7 @@ public class Lab8StudentInfo {
 					+ "a number 1-10): ");
 			userNum = Validator.getInt(scan, "Please Enter a digit 1-10:  ");
 			userNum = userNum - 1;
-			while (userNum > 10) {
+			while (userNum > 9) {
 				System.out.println("You have enter a digit above 10");
 				userNum = Validator.getInt(scan, "Please Enter a digit 1-10:  ");
 				continue;
